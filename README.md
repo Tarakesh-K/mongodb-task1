@@ -4,7 +4,7 @@ db.products.find({})
    .projection({})
    .sort({_id: 1})
    
-// (2) Find the product price which are between 400 to 800
+// (2) Find the product price which are between 400 to 800Cancel changes
 
 db.products.find({$and : [{product_price: {$gte: 400}}, {product_price: {$lte: 800}}]});
 
